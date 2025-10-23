@@ -155,7 +155,7 @@ const Contact = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <a href="public/VireshaHTResume 21-10-25.pdf" download className="download-btn">
+              <a href="/VireshaHTResume.pdf" download className="download-btn">
                 <FaDownload />
                 <span>Download Resume</span>
               </a>

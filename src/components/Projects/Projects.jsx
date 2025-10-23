@@ -21,7 +21,7 @@ const Projects = () => {
       title: 'CERVI-AI',
       description: 'AI-powered cervical cytology screening system using YOLOv8 for automated cell detection and analysis.',
       detailedDescription: 'CERVI-AI is an end-to-end web + AI system for automated cervical cytology screening. Lab technicians upload microscope images; the backend applies CLAHE + Perona–Malik preprocessing and runs YOLOv8/PyTorch to detect suspicious cells. Doctors review original vs. annotated predictions side-by-side and submit a report. The system is offline-capable on Jetson Nano, NewGen IEDC–funded, and recipient of a Special Jury Award. Results: mAP50≈0.67, F1≈0.64 on internal test set.',
-      image: 'public/doc.jpg',
+      image: '/doc.jpg',
       technologies: [
         'React',
         'Flask',
@@ -51,7 +51,7 @@ const Projects = () => {
         'CNN-based system that detects and classifies tomato leaf diseases from images and serves instant results via a simple web interface—built to aid timely, data-driven decisions for farmers.',
       detailedDescription:
         'The pipeline covers dataset curation, preprocessing (resizing/normalization + augmentation), and a TensorFlow/Keras CNN (Conv2D→MaxPool→Dense→Softmax) trained with an 80/20 split. The model achieves ~91% classification accuracy and is integrated into a web-based tool where users upload a leaf photo to receive predicted class, confidence, and suggested remedies. Results include accuracy/loss curves and a confusion matrix highlighting strong performance on most classes with a few visually similar classes showing confusion.',
-        image: 'public/tomoto.jpg',
+        image: '/tomoto.jpg',
       technologies: [
         'Python',
         'TensorFlow (Keras)',
@@ -78,7 +78,7 @@ const Projects = () => {
         'Web platform to empower citizens—especially women—with authentic legal information and access to financial assistance programs.',
       detailedDescription:
         'Built in 24 hours at the SHE Secure Hackathon 2025 (JNNCE × Hack2Skill), Shakti—guided by the vision of “Nyaya Setu: The Legal Bridge”—centralizes trustworthy resources across constitutional rights, criminal procedures, family and property law, and women-centric legal aid. It also curates financial-literacy content, government schemes, loans, and entrepreneurship programs. The MVP ships a clean search-and-browse UI, topic hubs, source attribution, and quick links to verified portals, focusing on accessibility, authenticity, and empowerment.',
-      image: 'public/shakthi.jpeg',
+      image: '/shakthi.jpeg',
       technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
       category: 'web',
       github: 'https://github.com/VireshaHt/SheSecure',
@@ -98,7 +98,7 @@ const Projects = () => {
         'Low-cost, portable driver-drowsiness alert prototype using IR eye-blink sensing, Arduino control, buzzer alert, and relay-based safety cutoff.',
       detailedDescription:
         'The system mounts IR sensors near the eyes to detect reflected/absorbed IR and distinguish normal blinking from prolonged eyelid closure. An Arduino Uno reads the sensor signal and triggers a piezo buzzer if the eyes stay closed beyond a threshold (~5 s). If drowsiness persists after the alert (~2 s), a relay opens the controlled circuit to stop the demo “motor”/vehicle line, illustrating an emergency cutoff. The build emphasizes simplicity, affordability, and ease of use for accident prevention, with future improvements suggested around smaller/less-heating IR modules.',
-      image: 'public/anti.jpg',
+      image: '/anti.jpg',
       technologies: [
         'Arduino Uno',
         'IR Sensor',
@@ -126,7 +126,7 @@ const Projects = () => {
         'Autonomous robot that follows a pre-defined line using IR sensors and halts/avoids obstacles with an ultrasonic module, driven by Arduino + L293D.',
       detailedDescription:
         'Built around Arduino Uno and L293D motor driver, the robot uses a pair/array of IR sensors to read line contrast and continuously correct steering, while an HC-SR04 ultrasonic sensor monitors the path ahead to stop or reroute on obstruction. The design emphasizes reliable line tracking on high-contrast paths, configurable thresholding, and robust turns, with a low-cost BO-motor chassis and Li-ion power. Suitable for warehouse/material handling demos and education; future work suggests vision/LiDAR upgrades and better environmental invariance.',
-      image: 'public/lfr.jpg',
+      image: '/lfr.jpg',
       technologies: [
         'Arduino Uno',
         'IR Line Sensors',

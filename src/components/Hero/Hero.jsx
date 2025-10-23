@@ -111,7 +111,7 @@ const Hero = () => {
               </motion.a>
               
               <motion.a 
-                href="/VireshaHTResume 21-10-25.pdf" 
+                href="/VireshaHTResume.pdf" 
                 className="btn btn-outline"
                 download="VireshaHTResume.pdf"
                 whileHover={{ scale: 1.05 }}
@@ -146,8 +146,8 @@ const Hero = () => {
           >
             <div className="image-container">
               <img 
-                src="/Viresha H T.jpg" 
-                alt="Viresha H T" 
+                src="/Viresha-H-T.jpg" 
+                alt="Viresha-H-T" 
                 className="hero-photo"
               />
               <div className="image-glow"></div>

@@ -20,7 +20,7 @@ const Certifications = () => {
       category: 'programming',
       verified: true,
       credentialId: 'NPTEL24CS43S95410015',
-      url: 'public/Programming In Java Certificate.pdf'
+      url: '/Programming-In-Java-Certificate.pdf'
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ const Certifications = () => {
       category: 'it-support',
       verified: true,
       credentialId: 'XFCN2K2DUJCW',
-      url: 'public/Technical Fundamental Suppotr.pdf'
+      url: '/Technical-Fundamental-Suppotr.pdf'
     },
     {
       id: 3,
@@ -48,7 +48,7 @@ const Certifications = () => {
       category: 'programming',
       verified: true,
       credentialId: '',
-      url: 'public/Joy comp py.pdf'
+      url: '/Joy-comp-py.pdf'
     },
     {
       id: 4,
@@ -62,7 +62,7 @@ const Certifications = () => {
       category: 'cloud',
       verified: true,
       credentialId: 'SMROK4JJPMOA',
-      url: 'public/AWS Cloud Technical Certification.pdf'
+      url: '/AWS-Cloud-Technical-Certification.pdf'
     },
     {
       id: 5,
@@ -90,7 +90,7 @@ const Certifications = () => {
       category: 'internship',
       verified: true,
       credentialId: 'N/A',
-      url: 'public/SPARK Internship.pdf'
+      url: '/SPARK-Internship.pdf'
     },
     {
       id: 7,
@@ -104,7 +104,7 @@ const Certifications = () => {
       category: 'data',
       verified: true,
       credentialId: 'N/A',
-      url: 'public/DAWpy.pdf'
+      url: '/DAWpy.pdf'
     },
     {
       id: 8,
@@ -118,7 +118,7 @@ const Certifications = () => {
       category: 'data',
       verified: true,
       credentialId: 'D3ZAQUFA3FMV',
-      url: 'public/I Web Development certificate.pdf'
+      url: '/I-Web-Development-certificate.pdf'
     },
     {
       id: 9,
@@ -132,7 +132,7 @@ const Certifications = () => {
       category: 'cybersecurity',
       verified: true,
       credentialId: '2WRD7PZM498N',
-      url: 'public/Foudation of Cybersecurity certificate.pdf'
+      url: '/Foudation-of-Cybersecurity-certificate.pdf'
     },
     {
       id: 10,
@@ -146,7 +146,7 @@ const Certifications = () => {
       category: 'cybersecurity',
       verified: true,
       credentialId: '6ZCN5FQBZY86',
-      url: 'public/play it safe cyber security certificate.pdf'
+      url: '/play-it-safe-cyber-security-certificate.pdf'
     },
     {
       id: 11,
@@ -160,7 +160,7 @@ const Certifications = () => {
       category: 'cybersecurity',
       verified: true,
       credentialId: '2GT4RACP62Z9',
-      url: 'public/IT Security.pdf'
+      url: '/IT-Security.pdf'
     },
     {
       id: 12,
@@ -174,7 +174,7 @@ const Certifications = () => {
       category: 'it-support',
       verified: true,
       credentialId: 'H53L7B868KKT',
-      url: 'public/System admistration.pdf'
+      url: '/System-admistration.pdf'
     }
   ]
 

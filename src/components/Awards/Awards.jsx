@@ -65,7 +65,7 @@ const Awards = () => {
   category: 'academic',
   featured: false,
   color: 'blue',
-  certificateUrl: 'public/merit.jpg'
+  certificateUrl: '/merit.jpg'
 },
     
     {
@@ -78,7 +78,7 @@ const Awards = () => {
       category: "competition",
       featured: false,
       color: "silver",
-      certificateUrl: 'public/TechSpark1.0.pdf'
+      certificateUrl: '/TechSpark1.0.pdf'
     },
     {
       id: 5,
@@ -90,7 +90,7 @@ const Awards = () => {
       category: "competition",
       featured: false,
       color: "bronze",
-      certificateUrl: 'public/Techzon.pdf'
+      certificateUrl: '/Techzon.pdf'
     },
     {
       id: 6,
@@ -102,7 +102,7 @@ const Awards = () => {
       category: "competition",
       featured: false,
       color: "silver",
-      certificateUrl: 'public/hoby project.jpeg'
+      certificateUrl: '/hoby-project.jpeg'
     },
    {
   id: 7,
@@ -115,7 +115,7 @@ const Awards = () => {
   category: 'competition',
   featured: false,
   color: 'blue',
-  certificateUrl: 'public/hiring challege.jpeg'
+  certificateUrl: '/hiring-challege.jpeg'
 },
    {
   id: 8,
@@ -128,7 +128,7 @@ const Awards = () => {
   category: 'competition',
   featured: false,
   color: 'green',
-  certificateUrl: 'public/Sports certificate.pdf'
+  certificateUrl: '/Sports-certificate.pdf'
 }
   ]
 

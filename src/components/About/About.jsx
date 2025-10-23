@@ -37,24 +37,25 @@ const About = () => {
 
   // Education data
   const educationData = [
-    {
-      id: 1,
-      institution: "Jawaharlal Nehru National College of Engineering (JNNCE). Shivamogga.India",
-      degree: "Bachelor of Engineering in Information Science & Engineering",
-      duration: "2022 - 2026",
-      cgpa: "3.7/4",
-      image: "public/jnnce1.webp",
-      marksCard: "public/Transcript Certificates.pdf",
-      description: "I’m in the final year of my B.E. in Information Science & Engineering at JNNCE, Shivamogga (affiliated with VTU, Belagavi, India), 2022–2026 batch, and I serve as Chair, IEEE Computer Society Student Chapter (JNNCE)."
-    },
+   {
+  id: 1,
+  institution: "Jawaharlal Nehru National College of Engineering (JNNCE), Shivamogga, India",
+  degree: "Bachelor of Engineering in Information Science & Engineering",
+  duration: "2022 - 2026",
+  cgpa: "3.7/4",
+  image: "/jnnce1.webp",                 // ✅ not "public/jnnce1.webp"
+  marksCard: "/Transcript-Certificates.pdf", // ✅ not "public/Transcript-Certificates.pdf"
+  description:
+    "I’m in the final year of my B.E. in Information Science & Engineering at JNNCE, Shivamogga (affiliated with VTU, Belagavi, India), 2022–2026 batch, and I serve as Chair, IEEE Computer Society Student Chapter (JNNCE)."
+},
     {
       id: 2,
       institution: "K.V.S Science PU College. Shikarpura. India",
       degree: "Pre-University College(plus one and plus two)",
       duration: "2020- 2022",
       percentage: "94%",
-      image: "public/kvs.jpg",
-      marksCard: "public/Viresha H T_PUC.pdf",
+      image: "/kvs.jpg",
+      marksCard: "/Viresha-H-T_PUC.pdf",
       description: "I completed my Higher Secondary Education (Plus One & Plus Two) in the Science stream (PCMB: Physics, Chemistry, Mathematics, Biology) at Kamalamma Vrushabendra Swamy Science PU College, Shikaripura, India. I studied Plus One (2020–2021) and Plus Two (2021–2022) under the Karnataka State Pre-University Board (PUE) and achieved an overall 97% (PCMB) in my Higher Secondary Examination."
     },
     {
@@ -63,8 +64,8 @@ const About = () => {
       degree: "Secondary Education (10th Grade)",
       duration: "2019-2020",
       percentage: "91.2%",
-      image: "public/mdrs.jpeg",
-      marksCard: "public/Viresha H T_10th.pdf",
+      image: "/mdrs.jpeg",
+      marksCard: "/Viresha-H-T_10th.pdf",
       description: "I completed my 6th to 10th grades at MDRS Hosuru. During this time, I actively participated in computer-science clubs and served as the General Secretary in Grade 10. I represented my school at the state level in ball badminton, and I also participated in—and won—multiple quiz competitions. I achieved an A+ grade in all subjects in the SSLC examination conducted by the Karnataka State Board."
     }
   ]
@@ -197,7 +198,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <div className="profile-image">
-              <img src="/Viresha H T.jpg" alt="Viresha H T" />
+              <img src="/Viresha-H-T.jpg" alt="Viresha H T" />
             </div>
           </motion.div>
 
