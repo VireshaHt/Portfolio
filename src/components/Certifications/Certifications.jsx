@@ -20,7 +20,7 @@ const Certifications = () => {
       category: 'programming',
       verified: true,
       credentialId: 'NPTEL24CS43S95410015',
-      url: '/Programming-In-Java-Certificate.pdf'
+      url: 'https://www.google.com/'
     },
     {
       id: 2,
