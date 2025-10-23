@@ -1,0 +1,281 @@
+.timeline {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.section-title p {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.timeline-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.timeline-section {
+  position: relative;
+}
+
+.timeline-section-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #00aaff;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.section-icon {
+  font-size: 1.5rem;
+}
+
+.timeline-items {
+  position: relative;
+}
+
+.timeline-items::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #00aaff, #0066cc);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 80px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  border: 2px solid;
+  z-index: 2;
+}
+
+.timeline-item.blue .timeline-marker {
+  border-color: #00aaff;
+  background: rgba(0, 170, 255, 0.1);
+}
+
+.timeline-item.green .timeline-marker {
+  border-color: #32cd32;
+  background: rgba(50, 205, 50, 0.1);
+}
+
+.timeline-item.purple .timeline-marker {
+  border-color: #8a2be2;
+  background: rgba(138, 43, 226, 0.1);
+}
+
+.timeline-item.orange .timeline-marker {
+  border-color: #ff8c00;
+  background: rgba(255, 140, 0, 0.1);
+}
+
+.timeline-item.teal .timeline-marker {
+  border-color: #20b2aa;
+  background: rgba(32, 178, 170, 0.1);
+}
+
+.timeline-item.pink .timeline-marker {
+  border-color: #ff69b4;
+  background: rgba(255, 105, 180, 0.1);
+}
+
+.timeline-icon {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.timeline-item.blue .timeline-icon {
+  color: #00aaff;
+}
+
+.timeline-item.green .timeline-icon {
+  color: #32cd32;
+}
+
+.timeline-item.purple .timeline-icon {
+  color: #8a2be2;
+}
+
+.timeline-item.orange .timeline-icon {
+  color: #ff8c00;
+}
+
+.timeline-item.teal .timeline-icon {
+  color: #20b2aa;
+}
+
+.timeline-item.pink .timeline-icon {
+  color: #ff69b4;
+}
+
+.timeline-content-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.timeline-content-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 170, 255, 0.1);
+}
+
+.timeline-header h4 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.timeline-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-organization {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #00aaff;
+  font-weight: 500;
+}
+
+.meta-icon {
+  font-size: 0.9rem;
+}
+
+.timeline-location {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.timeline-period {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.timeline-description {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-achievements h5 {
+  color: #00aaff;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.timeline-achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-achievements li {
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.timeline-achievements li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #00aaff;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .timeline-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .timeline-section-title {
+    font-size: 1.5rem;
+  }
+
+  .timeline-item {
+    padding-left: 70px;
+  }
+
+  .timeline-marker {
+    width: 50px;
+    height: 50px;
+  }
+
+  .timeline-icon {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content-item {
+    padding: 1.5rem;
+  }
+
+  .timeline-header h4 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-meta {
+    gap: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    padding-left: 60px;
+  }
+
+  .timeline-marker {
+    width: 40px;
+    height: 40px;
+  }
+
+  .timeline-icon {
+    font-size: 1rem;
+  }
+
+  .timeline-content-item {
+    padding: 1rem;
+  }
+
+  .timeline-header h4 {
+    font-size: 1rem;
+  }
+
+  .timeline-achievements li {
+    font-size: 0.8rem;
+  }
+}
+
+
+

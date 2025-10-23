@@ -1,0 +1,409 @@
+.about {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-left {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-right {
+  max-width: 600px;
+}
+
+.about-text {
+  margin-bottom: 2rem;
+}
+
+.about-text p {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.tabs-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: #e0e0e0;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.tab:hover {
+  color: #ffffff;
+}
+
+.tab.active {
+  color: #ff6b6b;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #ff6b6b;
+  border-radius: 2px 2px 0 0;
+}
+
+.tab-content {
+  min-height: 300px;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-category {
+  margin-bottom: 1.5rem;
+}
+
+.skill-category h4 {
+  color: #ff6b6b;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.skill-tag:hover {
+  background: rgba(255, 107, 107, 0.2);
+  border-color: #ff6b6b;
+  color: #ffffff;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-item {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border-left: 4px solid #ff6b6b;
+}
+
+.experience-item h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.experience-item .company {
+  color: #00aaff;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.experience-item .duration {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.experience-item .description {
+  color: #e0e0e0;
+  line-height: 1.5;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education-item {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border-left: 4px solid #ff6b6b;
+}
+
+.education-item h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.education-item .degree {
+  color: #00aaff;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.education-item .duration {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.education-item .performance {
+  color: #ff6b6b;
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.show-more-btn {
+  background: transparent;
+  border: 2px solid #ff6b6b;
+  color: #ff6b6b;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.show-more-btn:hover {
+  background: #ff6b6b;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Education Page Styles */
+.education {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.education-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e0e0e0;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.education-header h2 {
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.education-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.education-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.education-content {
+  padding: 1.5rem;
+}
+
+.education-content h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.education-content .degree {
+  color: #00aaff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.education-content .duration {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.education-content .performance {
+  color: #ff6b6b;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.education-content .description {
+  color: #e0e0e0;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid #ff6b6b;
+  color: #ff6b6b;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.download-btn:hover {
+  background: #ff6b6b;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .tab {
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .tabs-container {
+    padding: 1rem;
+  }
+
+  .education-content {
+    padding: 1rem;
+  }
+}
